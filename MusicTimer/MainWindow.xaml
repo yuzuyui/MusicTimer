@@ -6,10 +6,13 @@
         xmlns:local="clr-namespace:MusicTimer"
         mc:Ignorable="d"
         Title="MainWindow" Height="200" Width="200">
-    <Grid>
-        <Button Content="Start" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Click="Btn_Start_Click"/>
+    <Grid Loaded="Grid_Loaded">
+        <Button Content="Start" HorizontalAlignment="Left" Margin="10,11,0,0" VerticalAlignment="Top" Click="Btn_Start_Click"/>
         <Button Content="Stop" HorizontalAlignment="Left" Margin="44,10,0,0" VerticalAlignment="Top" Click="Btn_Stop_Click"/>
-        <Label x:Name="Lbl_Now" Content="Label" HorizontalAlignment="Left" Margin="10,35,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Lbl_Now" Content="Label" HorizontalAlignment="Right" Margin="0,35,152,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Tb_MusicFilePath" HorizontalAlignment="Left" Margin="10,64,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="147"/>
+        <Button x:Name="Btn_Pickup" Content="参照" Margin="162,64,10,0" VerticalAlignment="Top" Click="Btn_Pickup_Click"/>
+        <Slider x:Name="S_Volume" Margin="84,11,0,0" VerticalAlignment="Top" TickPlacement="TopLeft" TickFrequency="100" SmallChange="1" ValueChanged="S_Volume_ValueChanged" HorizontalAlignment="Left" Width="106"/>
 
     </Grid>
 </Window>
